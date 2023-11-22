@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <div class="column-header">
+            <h1 id="title">Learner Experience Survey</h1>
+            <p id="description">We would like to know a little more about your experience with the course. Thank you for taking the time to help us improve the platform.</p>
+          </div>
+      
+          <div class="column-image">
+            <div id="image-div">
+              <img src="https://i.postimg.cc/yxmh0gh7/5358799-removebg-preview.png" alt="Survey form icon">
+            </div>
+          </div>
+        </div>
+      
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+          </div>
+      
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label><br>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+          </div>
+      
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label><br>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+          </div>
+      
+          <div class="form-group">
+            <label>Employment Status</label>
+            <br>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select your current status</option>
+              <option value="student">Student</option>
+              <option value="job-full">Employed Full Time</option>
+              <option value="job-part">Employed Part Time</option>
+              <option value="self-employed">Self-employed</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="retired">Retired</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label>Experience Level</label>
+            <br>
+            <select id="experience-dropdown" name="experience" class="form-control" required>
+              <option disabled selected value>Select your relevant experience level</option>
+              <option value="junior">Junior (0-2 years experience)</option>
+              <option value="mid">Mid-level (2+ years experience)</option>
+              <option value="senior">Senior</option>
+              <option value="executive">Executive</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label>Overall, how would you rate the course?</label>
+            <br>
+            <input name="user-rate" value="excellent" type="radio" class="input-radio" checked />Excellent
+            <br>
+            <input name="user-rate" value="very-good" type="radio" class="input-radio" />Very good
+            <br>
+      
+            <input name="user-rate" value="good" type="radio" class="input-radio" />Good
+            <br>
+      
+            <input name="user-rate" value="fair" type="radio" class="input-radio" />Fair
+      
+            <br>
+            <input name="user-rate" value="poor" type="radio" class="input-radio" />Poor
+          </div>
+      
+          <div class="form-group">
+            <label>How useful were the course materials (readings, videos, assignments, etc)?</label>
+            <br>
+            <input name="materials-rate" value="extremely" type="radio" class="input-radio" checked />Extremely useful
+            <br>
+            <input name="materials-rate" value="very" type="radio" class="input-radio" />Very useful
+            <br>
+      
+            <input name="materials-rate" value="somewhat" type="radio" class="input-radio" />Somewhat useful<br>
+            <input name="materials-rate" value="not-so" type="radio" class="input-radio" />Not so useful<br>
+            <input name="materials-rate" value="no" type="radio" class="input-radio" />No useful at all
+            <br>
+          </div>
+      
+          <div class="form-group">
+            <label>Would you recommend the course to a friend?</label>
+            <br>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely
+            <br>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe
+      
+            <br>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure<br>
+          </div>
+      
+          <div class="form-group">
+            <label>
+              What would you like to see improved? (Check all that apply)
+            </label>
+      
+            <br>
+            <input name="prefer" value="lectures" type="checkbox" class="input-checkbox" />Lectures and videos<br>
+            <input name="prefer" value="material" type="checkbox" class="input-checkbox" />Instructional materials i.e. readings<br>
+            <input name="prefer" value="assignments" type="checkbox" class="input-checkbox" />Course assignments and projects<br>
+            <input name="prefer" value="exams" type="checkbox" class="input-checkbox" />Graded assignments and exams<br>
+            <input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum<br>
+            <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses
+          </div>
+      
+          <div class="form-group">
+            <label>Any comments or suggestions?</label><br>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+      
+          <div class="form-group">
+            <center><button type="submit" id="submit" class="submit-button">
+              Submit
+              </button></center>
+          </div>
+        </form>
+      </div>
+      
+      <section class="footer">
+        <p> Design & Development - Keerti Vishwkarma </p>
+      </section>
+</body>
+</html>
